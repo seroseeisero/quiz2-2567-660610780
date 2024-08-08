@@ -1,11 +1,12 @@
 "use client";
-export default function Comment({
-  userImagePath,
-  username,
-  commentText,
+import { CommentProps } from "@/libs/types";
+import { ReplyProps } from "@/libs/types";
+export default function comment({
+  userImagePath, 
+  username, 
+  replyText, 
   likeNum,
-  replies,
-}) {
+  replies }:CommentProps){
   return (
     <div>
       your code for Comment component here ...
